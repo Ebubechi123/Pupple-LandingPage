@@ -29,7 +29,7 @@ body{
     height: 8.6vh;
     background-color: white;
     border-bottom: 0.1px solid rgb(240, 235, 235);
-    /* box-shadow: 0 0 39px 0px rgb(209 209 209) */
+    box-shadow: 0 0 39px 0px rgb(209 209 209);
     position: fixed;
     z-index: 999;
 }
@@ -141,16 +141,16 @@ li:hover{
 }
 
 .shadow{
-    position: relative;
     background-color: rgba(216, 216, 216, 0.541);
     width: 70%;
     height: 34px;
-    z-index: 999;
     top: -90px;
     outline: none;
     box-shadow: 0 0 39px 0px rgb(209 209 209);
     border: none;
     animation:  float 3s linear infinite ;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -209,26 +209,75 @@ li:hover{
 }
 
 
+.circle,.circle-1{
+    box-shadow: 0 0 39px 0px rgb(209 209 209);
+    border-radius: 100px;
+    position: absolute;
+    z-index: -999;
+    background: linear-gradient(70deg,rgb(70, 0, 70),rgb(78, 2, 78),rgb(214, 49, 214));
+}
+
 .circle{
     width: 90px;
     height: 90px;
-    border-radius: 100px;
-    position: absolute;
     top: -10%;
     left: 20%;
-    z-index: -999;
-    background: linear-gradient(70deg,rgb(70, 0, 70),rgb(78, 2, 78),rgb(214, 49, 214));
+  
 }
 .circle-1{
     width: 30px;
     height: 30px;
-    border-radius: 100px;
-    position: absolute;
     top: 9%;
     left: 27%;
-    z-index: -999;
-    background: linear-gradient(70deg,rgb(70, 0, 70),rgb(78, 2, 78),rgb(214, 49, 214));
 }
+
+
+
+/* Email Section */
+
+.email-section{
+    position: absolute;
+    width: 100%;
+    margin-top: 780px;
+    height: 450px;
+    background-color: red;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:670px){
     .nav-logo{
@@ -280,6 +329,11 @@ li:hover{
     top: -8%;
     z-index: -9;
     left: 23%;
+}
+.email-section{
+    margin-top: 1123px;
+    height: 450px;
+
 }
 }
 
